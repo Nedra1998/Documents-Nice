@@ -1,0 +1,20 @@
+{
+  "name": "Loci",
+  "version": "1.0.0",
+  "description": "Loci Knowledge Base",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build",
+    "eject": "vuepress eject",
+    "info": "vuepress info"
+  },
+  "dependencies": {
+    "vuepress": "^1.4.1"
+  },
+  "devDependencies": {
+    "vue-click-outside": "^1.1.0",
+    "vuepress-plugin-reading-progress": "^1.0.9"
+  }
+}

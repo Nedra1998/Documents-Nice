@@ -1,0 +1,137 @@
+@import '../variables.styl';
+@import '../colors/ayu-light.styl';
+
+.yuu-theme-ayu-light {
+  background-color :$common-bg;
+  .page {
+    color: $common-fg;
+    background-color: $common-bg;
+  }
+  .navbar {
+    background-color: $ui-panel-bg;
+    border-bottom-color: $ui-panel-border;
+    .site-name {
+      color: $common-fg;
+    }
+  }
+  .home .hero h1 {
+    color: $common-accent;
+  }
+  .home .hero .description {
+    color: $syntax-comment;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    color: $common-fg;
+  }
+  .nav-links {
+    a,
+    .dropdown-wrapper .dropdown-title,
+    .dropdown-wrapper .nav-dropdown .dropdown-item a {
+      background-color: $ui-panel-bg;
+      &:hover,
+      &.router-link-active {
+        color: $common-accent;
+      }
+    }
+    .dropdown-wrapper .nav-dropdown .dropdown-item a.router-link-active::after {
+      border-left-color: $common-accent;
+    }
+  }
+	@media (min-width: $MQMobile) {
+		.nav-item > a:not(.external) {
+			&:hover,
+			&.router-link-active {
+				border-bottom-color: $common-accent;
+			}
+		}
+	}
+  .sidebar {
+    background-color: $ui-panel-bg;
+    border-right-color: $ui-panel-border;
+  }
+  .search-box {
+    background-color: $ui-panel-bg;
+    input {
+      background-color: $ui-panel-bg;
+      border-color: $ui-panel-border;
+      color: $syntax-comment;
+    }
+    input:focus {
+      border-color: $common-accent;
+    }
+    .suggestions {
+      background-color: $ui-panel-bg;
+      border-color: $ui-panel-border;
+    }
+    .suggestion {
+      background-color: $ui-panel-bg;
+      a {
+        color: $common-fg;
+      }
+      &.focused {
+        background-color: $ui-guide-normal;
+        a {
+          color: $common-accent;
+        }
+      }
+    }
+  }
+	a {
+		color: $common-accent;
+	}
+  a.sidebar-link {
+    color: $common-fg;
+    &:hover {
+      color: $common-accent;
+    }
+    &.active {
+      color: $common-accent;
+      border-left-color: $common-accent;
+    }
+  }
+  .custom-block.tip {
+    border-color: $syntax-regexp;
+    background-color: alpha($syntax-regexp, 0.4);
+    color: $common-fg;
+    .custom-block-title {
+      color: $syntax-regexp;
+    }
+  }
+  .custom-block.warning {
+    border-color: $syntax-func;
+    background-color: alpha($syntax-func, 0.4);
+    color: $common-fg;
+    .custom-block-title {
+      color: $syntax-func;
+    }
+  }
+  .custom-block.danger{
+    border-color: $syntax-markup;
+    background-color: alpha($syntax-markup, 0.4);
+    color: $common-fg;
+    .custom-block-title {
+      color: $syntax-markup;
+    }
+  }
+  blockquote {
+    color: $syntax-comment;
+    border-color: $syntax-comment;
+  }
+
+  .reading-progress .progress {
+    background-color: $common-accent;
+  }
+
+  #nprogress {
+    .bar {
+      background-color: $common-accent;
+    }
+    .peg {
+      box-shadow: 0 0 10px $common-accent, 0 0 5px $$common-accent;
+    }
+    .spinner-icon {
+      border-top-color: $common-accent;
+      border-left-color: $common-accent;
+    }
+  }
+}
