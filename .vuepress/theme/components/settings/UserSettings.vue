@@ -60,14 +60,12 @@ export default {
 		}
 	}
 	.user-settings-menu {
-		background-color: #fff;
 		position: absolute;
 		top: 40px;
 		left: 50%;
 		min-width: 100px;
 		margin: 0;
 		padding: 1em;
-		border: 1px solid $borderColor;
 		border-radius: 4px;
 		transform: translateX(-50%);
 		z-index: 150;
@@ -77,7 +75,6 @@ export default {
 			top: -7px;
 			left: 50%;
 			border-style: solid;
-			border-color: transparent transparent $borderColor;
 			border-width: 0 7px 7px;
 			transform: translateX(-50%);
 		}

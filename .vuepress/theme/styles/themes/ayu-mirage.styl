@@ -3,6 +3,8 @@
 
 .yuu-theme-ayu-mirage {
   background-color :$common-bg;
+  color: $common-fg;
+  background-color: $common-bg;
   .page {
     color: $common-fg;
     background-color: $common-bg;
@@ -23,14 +25,24 @@
   h1,h2,h3,h4,h5,h6 {
     color: $common-fg;
   }
+  .user-settings .user-settings-menu {
+    background-color: $ui-panel-bg;
+		border: 1px solid $ui-panel-border;
+  }
   .nav-links {
+    .dropdown-wrapper ul {
+      background-color: $ui-panel-bg;
+      border-color: $ui-panel-border;
+    }
     a,
     .dropdown-wrapper .dropdown-title,
     .dropdown-wrapper .nav-dropdown .dropdown-item a {
+      color: $common-fg;
       background-color: $ui-panel-bg;
       &:hover,
       &.router-link-active {
         color: $common-accent;
+        background-color: $ui-guide-normal;
       }
     }
     .dropdown-wrapper .nav-dropdown .dropdown-item a.router-link-active::after {

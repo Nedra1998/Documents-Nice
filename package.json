@@ -14,7 +14,12 @@
     "vuepress": "^1.4.1"
   },
   "devDependencies": {
+    "@goy/vuepress-plugin-svg-icons": "^4.1.0",
+    "markdown-it-center-text": "^1.0.4",
+    "markdown-it-imsize": "^2.0.1",
     "vue-click-outside": "^1.1.0",
+    "vuepress-plugin-mathjax": "^1.2.8",
+    "vuepress-plugin-medium-zoom": "^1.1.8",
     "vuepress-plugin-reading-progress": "^1.0.9"
   }
 }

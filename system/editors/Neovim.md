@@ -140,10 +140,3 @@ version control messages.
 Plug 'farmergreg/vim-lastplace'  " Intelligently reopen files at your last edit position in Vim
 ```
 
-## Downloads
-
-I would recommend against using my configuration, but it is available here if
-you want to use it for reference.
-
-[Download Neovim `init.vim`](/assets/laptop.init.vim)
-

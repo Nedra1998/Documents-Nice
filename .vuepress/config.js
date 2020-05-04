@@ -3,10 +3,25 @@ module.exports = {
   description: "Loci Knowledge Base",
   themeConfig: {
     smoothScroll: true,
+    nav: [
+      {
+        text: 'System',
+        items: [
+          { text: 'Colors', link: '/system/colors/' },
+          { text: 'Editors', link: '/system/editors/' },
+          { text: 'Terminal', link: '/system/terminals/' },
+          { text: 'Linux', link: '/system/linux/' },
+          { text: 'Desktop', link: '/system/desktop/' },
+        ]
+      }
+    ],
     sidebarDepth: 3,
     sidebar: {
-      '/editors/': [
+      '/system/editors/': [
         '', 'Neovim'
+      ],
+      '/system/colors/': [
+        '', 'Ayu', 'Dracula', 'Nord'
       ]
     },
     yuu: {
@@ -14,6 +29,17 @@ module.exports = {
     }
   },
   plugins: [
-    'reading-progress'
-  ]
+    'reading-progress',
+    'vuepress-plugin-smooth-scroll',
+    'vuepress-plugin-medium-zoom',
+    'vuepress-plugin-mathjax',
+    '@goy/svg-icons'
+  ],
+  markdown: {
+    linkify: true,
+    extendMarkdown: md => {
+      md.use(require('markdown-it-imsize'));
+      md.use(require('markdown-it-center-text'));
+    },
+  }
 }
