@@ -21,7 +21,7 @@ module.exports = {
         '', 'Neovim'
       ],
       '/system/colors/': [
-        '', 'Ayu', 'Dracula', 'Nord'
+        '', 'Ayu', 'Dracula', 'Gruvbox', 'Nord'
       ]
     },
     yuu: {
