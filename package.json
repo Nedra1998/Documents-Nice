@@ -8,7 +8,8 @@
     "dev": "vuepress dev",
     "build": "vuepress build",
     "eject": "vuepress eject",
-    "info": "vuepress info"
+    "info": "vuepress info",
+    "push": "git add -A && git commit -m\"$(date)\" && git push"
   },
   "dependencies": {
     "vuepress": "^1.4.1"
