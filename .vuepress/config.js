@@ -1,6 +1,7 @@
 module.exports = {
   title: "Loci",
   description: "Loci Knowledge Base",
+  base: '/Documents/',
   themeConfig: {
     smoothScroll: true,
     nav: [
